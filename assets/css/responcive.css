@@ -1,15 +1,8 @@
 @media (max-width: 1400px) {
-  /* .container-fluid{
-    padding: 0 15px;
-  } */
   .container {
-    display: grid;
-    padding: 40px 22px 23px 77px;
-    margin: 0 auto;
-    gap: 1.8rem;
-    grid-template-columns: 16rem auto 13rem;
-    max-width: 1920px;
-    width: 100%;
+    padding: 40px 16px 23px 50px;
+    gap: 1.4rem;
+    grid-template-columns: 20rem auto 15rem;
   }
 }
 
