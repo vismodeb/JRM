@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JRM</title>
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon"/>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/> -->
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <!-- google font -->
+    <link href="https://db.onlinewebfonts.com/c/1b60ac8cfd658aeb1fe11e8c3543ed7a?family=Simona+Regular" rel="stylesheet"/>
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="assets/css/FontAwesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responcive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start : Left Section -->
+      <div class="leftSection">
+        <div class="leftProfile">
+          <div class="leftProfileImg">
+            <div class="profileImg">
+              <a href="javascript:void(0);"
+                ><img src="assets/images/Profile.svg" alt=""
+              /></a>
+            </div>
+            <div class="profileText">
+              <h4 class="text_16">מנדל אורליק</h4>
+              <p class="text_16">אוקראינה</p>
+            </div>
+          </div>
+          <div class="profileSetting">
+            <div class="notification">
+              <a href="javascript:void(0);"
+                ><i class="settingIcon fa-regular fa-calendar"></i
+              ></a>
+            </div>
+            <div class="">
+              <a href="javascript:void(0);"
+                ><i class="settingIcon fa-solid fa-gear"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="litepicker"></div>
+        <!-- leftNotification -->
+        <div class="leftNotification">
+          <!-- leftSingleNotification -->
+          <div class="leftSingleNotification">
+            <div class="leftSingleContain">
+              <div class="leftMessageIcon">
+                <span class="material-symbols-outlined">forum</span>
+              </div>
+              <div class="notificationText">
+                <h4 class="text_18">פגישה עם ישראל גרילק</h4>
+                <p class="text_16">קינג ג’ורג’ 13 בשעה 14:15</p>
+              </div>
+            </div>
+            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
+          </div>
+          <!-- leftSingleNotification -->
+          <div class="leftSingleNotification">
+            <div class="leftSingleContain">
+              <div class="leftMessageIcon">
+                <i class="fa-solid fa-calendar-day"></i>
+              </div>
+              <div class="notificationText">
+                <h4 class="text_18">יארצייט לאבא של מנחם כהן</h4>
+                <p class="text_16">30.05.2024</p>
+              </div>
+            </div>
+            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
+          </div>
+          <!-- leftSingleNotification -->
+          <div class="leftSingleNotification">
+            <div class="leftSingleContain">
+              <div class="leftMessageIcon">
+                <span class="material-symbols-outlined">forum</span>
+              </div>
+              <div class="notificationText">
+                <h4 class="text_18">לטפל בהוראת קבע של יוסף</h4>
+                <p class="text_16">מספר חשבון: 785-965</p>
+              </div>
+            </div>
+            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
+          </div>
+          <!-- leftSingleNotification -->
+          <div class="leftSingleNotification">
+            <div class="leftSingleContain">
+              <div class="leftMessageIcon">
+                <span class="material-symbols-outlined">forum</span>
+              </div>
+              <div class="notificationText">
+                <h4 class="text_18">לארגן מסיבת פורים לקהילה</h4>
+                <p class="text_16">26.05.2024</p>
+              </div>
+            </div>
+            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
+          </div>
+        </div>
+      </div>
+      <!-- End : Left Section -->
+
+      <!-- Start : Main Content -->
+      <main class="mainWrapper">
+        <div class="searchBar">
+          <form action="">
+            <input type="search" placeholder="חיפוש" />
+            <span><img src="assets/images/search.svg" alt="Deshboard" /></span>
+          </form>
+        </div>
+        <div class="chartHeader">
+          <div class="chartHeaderRight">
+            <h2>ערב טוב הרב מנדל אורליק, ברוך הבא ל-JRM</h2>
+          </div>
+          <div class="countingBar">
+            <div class="progressCounting">
+              <div class="singleProgressContain">
+                <h4 class="text_20">אנשי קשר</h4>
+                <p class="text_10">
+                  <img src="assets/images/Ellipse.svg" alt="" />קהילה
+                </p>
+                <p class="text_10">
+                  <img src="assets/images/Ellipse-2.svg" alt="" />חברים
+                </p>
+                <p class="text_10">
+                  <img src="assets/images/Ellipse-3.svg" alt="" />משפחה
+                </p>
+              </div>
+              <div class="pieChartMain">
+                <div id="pie1"></div>
+                <p class="picChartText">563</p>
+              </div>
+            </div>
+            <div class="numberCounting progressCounting">
+              <div class="">
+                <h4 class="text_20">הכנסות פברואר</h4>
+                <div class="boxCound">
+                  <p>9.54%-</p>
+                </div>
+              </div>
+              <div class="numberCountBox_1">
+                <span>$</span>
+                <p id="counter">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chartArea">
+          <div class="chartLeft">
+            <a href="javascript:void(0);">סכום ההכנסה השנתי לפי חודשים</a>
+            <div id="chart"></div>
+          </div>
+          <div class="chartRight">
+            <a href="javascript:void(0);">כמות אנשי קשר בכל מעגל קשר</a>
+            <div id="chart-circle"></div>
+            <div class="circleChartBT">
+              <p class="text_10">
+                <img src="assets/images/Ellipse.svg" alt="" />קהילה
+              </p>
+              <p class="text_10">
+                <img src="assets/images/Ellipse-2.svg" alt="" />חברים
+              </p>
+              <p class="text_10">
+                <img src="assets/images/Ellipse-3.svg" alt="" />משפחה
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- End : Main Content -->
+
+      <!-- Start : Sidebar Section -->
+      <aside>
+        <div class="sidebar">
+          <div class="sidebarTopLogo">
+            <a href="javascript:void(0);"
+              ><img src="assets/images/logo.svg" alt=""
+            /></a>
+          </div>
+          <!-- sideBarMenu -->
+          <div class="sideBarMenu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i class="sidebarIcon fa-solid fa-user"></i>
+                      <p>אנשי קשר</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i
+                        class="iconSidebar fa-solid fa-square-poll-vertical"
+                      ></i>
+                      <p>תחומי פעילות</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i class="iconSidebar fa-solid fa-list-check"></i>
+                      <p>משימות</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <span class="iconSidebar material-symbols-outlined">
+                        forum
+                      </span>
+                      <p>פגישות</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem cardIcon_0">
+                      <i class="iconSidebar fa-regular fa-credit-card"></i>
+                      <p>כספים</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i class="iconSidebar fa-solid fa-calendar-day"></i>
+                      <p>ימי ציון</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i class="iconSidebar fa-solid fa-envelope"></i>
+                      <p>דיוור</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="sidebarItem">
+                      <i
+                        class="iconSidebar fa-solid fa-square-poll-vertical"
+                      ></i>
+                      <p>דוחות</p>
+                    </div>
+                    <div class="">
+                      <i class="plusIcon fa-solid fa-plus"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- sideBarBottom -->
+          <div class="sideBarBottom">
+            <a class="sideBarButton" href="javascript:void(0);">
+              <i class="iconSidebar fa-solid fa-message"></i>
+              <p>צ’אט</p>
+            </a>
+            <a class="sideBarButton" href="javascript:void(0);">
+              <i class="iconSidebar fa-solid fa-circle-question"></i>
+              <p>עזרה</p>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <!-- End : Sidebar Section -->
+    </div>
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Bootstrap js -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <!-- FontAwesome -->
+    <script src="assets/js/FontAwesome.min.js"></script>
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

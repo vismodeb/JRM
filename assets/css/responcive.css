@@ -1,0 +1,28 @@
+@media (max-width: 1400px) {
+  /* .container-fluid{
+    padding: 0 15px;
+  } */
+  .container {
+    display: grid;
+    padding: 40px 22px 23px 77px;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 16rem auto 13rem;
+    max-width: 1920px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 450px) {}
+
+@media (max-width: 367px) {}

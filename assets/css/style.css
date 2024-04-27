@@ -1,0 +1,462 @@
+/* 
+  Template Name: JRM
+  Template URI: https://
+  Author Name: 
+  Author URI: https://
+  Version: 1.0.0
+  Description: 
+  Tags: html, Css, Bootstrap, js
+*/
+
+/* Default Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Simona Regular";
+  background: #edf2fa;
+  /* direction:rtl; */
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  display: grid;
+  padding: 40px 22px 23px 77px;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 24.25rem auto 16.8125rem;
+  max-width: 1920px;
+  width: 100%;
+}
+.text_16 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.text_18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/*  Start : Left Section
+*************************************/
+.leftSection {
+  max-width: 388px;
+  direction: rtl;
+}
+.leftProfile {
+  padding: 20px;
+  background: #f9fbfd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftProfileImg {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.profileImg {
+  width: 40px;
+  height: 40px;
+}
+.notificationText h4,
+.profileText h4 {
+  color: #0b2d65;
+}
+.profileText p {
+  color: #95a6c1;
+}
+.profileSetting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.settingIcon {
+  padding: 9px;
+  width: 22px;
+  height: 22px;
+  background: #edf2fa;
+  border-radius: 10px;
+}
+.notification {
+  position: relative;
+}
+.notification::before {
+  content: "2";
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  color: #f9fbfd;
+  background: #fe5f3c;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* leftNotification */
+.leftSingleNotification {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 19px;
+  background: #f9fbfd;
+  border-radius: 20px;
+}
+.leftSingleContain {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.leftMessageIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #0042ad;
+  border-radius: 15px;
+}
+.notificationText p {
+  color: #b1c7e5;
+}
+.xmarkIcon {
+  width: 12px;
+  height: auto;
+  color: #0b2d65;
+}
+/*  
+*************************************/
+/* Start : Main Content
+*************************************/
+
+/* Start : Sidebar Section 
+*************************************/
+.sidebar {
+  padding: 13px;
+  max-width: 269px;
+  background: #0042ad;
+  border-radius: 25px;
+  direction: rtl;
+}
+.sidebarTopLogo {
+  max-width: 163px;
+  margin: auto;
+  padding-top: 53px;
+}
+/* sideBarMenu */
+.sideBarMenu {
+  padding: 55px 9px 153px;
+}
+.sideBarMenu nav ul li {
+  margin-top: 10px;
+}
+.sideBarMenu nav ul li a {
+  padding: 15px 29px 15px 19px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+  color: #ffffff;
+  transition: all 360ms ease;
+}
+.sideBarMenu nav ul li a:hover {
+  color: #0042ad;
+  background: #f9fbfd;
+}
+.sidebarItem {
+  display: flex;
+  /* align-items: center; */
+  gap: 21px;
+}
+.sidebarIcon {
+  width: 17px;
+  padding: 2px;
+  font-size: 16px;
+  border-radius: 2px;
+  color: #0042ad;
+  background: #ffffff;
+  transition: all 360ms ease;
+}
+.sideBarMenu nav ul li a:hover .sidebarIcon {
+  color: #ffffff;
+  background: #0042ad;
+}
+.plusIcon {
+  color: #fe5f3c;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: none;
+  transition: all 360ms ease;
+}
+.sideBarMenu nav ul li a:hover .plusIcon {
+  display: block;
+}
+/* sideBarBottom */
+.sideBarBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+.sideBarButton {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  padding: 14px 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #1557bf;
+  border-radius: 20px;
+  transition: all 360ms ease;
+}
+.sideBarButton:hover {
+  color: #0042ad;
+  background: #f9fbfd;
+}
+.iconSidebar {
+  width: 20px;
+  height: auto;
+}
+.cardIcon_0 .iconSidebar {
+  height: 22px;
+}
+
+
+.mainWrapper{
+  max-width: 970px;
+  margin: auto;
+}
+/* -- Search Bar -- */
+.searchBar {
+  position: relative;
+  text-align: right;
+  margin: 15px 0 83px;
+}
+.searchBar form {
+  position: relative;
+  max-width: 531px;
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.searchBar form input {
+  width: 100%;
+  height: 100%;
+  background: #f9fbfd;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  padding: 0 21px;
+  font-size: 18px;
+  color: #0b2d65;
+  text-align: right;
+}
+.searchBar form input::placeholder {
+  color: #0b2d65;
+}
+.searchBar form span {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+.searchBar form span img {
+  width: 18px;
+  height: auto;
+}
+
+/* chartHeader */
+.chartHeader {
+  background: #0b2d65;
+  border-radius: 20px;
+  padding: 19px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  direction: rtl;
+}
+.progressCounting {
+  width: 100%;
+  max-width: 308px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 25px;
+  background: #f9fbfd;
+  padding: 13px 26px 13px 20px;
+}
+.singleProgressContain{
+  max-width: 200px;
+}
+.text_20 {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  color: #0b2d65;
+  margin-bottom: 8px;
+}
+.text_10 {
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: right;
+  color: #0b2d65;
+}
+.text_10 img {
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+}
+.numberCounting {
+  margin-top: 20px;
+}
+.numberCountBox_1 {
+  padding: 20px 0px 14px 11px;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #FE5F3C;
+}
+.numberCountBox_1 p{
+  width: 90px;
+  display: inline-block;
+}
+.numberCountBox_1 span{
+  font-size: 36px;
+  font-weight: 700;
+  color: #FE5F3C;
+}
+.boxCound {
+  max-width: 60px;
+  padding: 1px 7px 2px 7px;
+  background: #fdd1d2;
+  border-radius: 50px;
+}
+.boxCound p {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #ea2b32;
+}
+.chartHeaderRight {
+  padding: 25px 35px 0 0;
+  text-align: right;
+}
+.chartHeaderRight h2 {
+  color: #f9fbfd;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500;
+  max-width: 400px;
+  width: 100%;
+  direction: rtl;
+}
+.pieChartMain{
+  /* max-width: 80px; */
+  position: relative;
+}
+.picChartText{
+  content: '';
+  position: absolute;
+  top: 32%;
+  left: 36%;
+  text-align: center;
+}
+.pieChartMain p{
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #0042AD;
+}
+/* -- Chart Area -- */
+.chartArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0;
+  gap: 20px;
+}
+.chartArea a {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #edf2fa;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #0043ae;
+  padding: 8px 10px;
+  font-weight: 500;
+}
+.chartLeft {
+  flex: 0 0 64%;
+  max-width: 582px;
+  /* height: 400px; */
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+}
+.chartRight {
+  /* flex: 0 0 36%; */
+  max-width: 368px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+}
+.circleChartBT{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: ltr;
+}
