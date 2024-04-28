@@ -575,4 +575,13 @@ input[type="search"]::-webkit-search-results-decoration {
 /* toggleDM_1 */
 .toggleDM_1{
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  padding: 500px;
+  z-index: 99;
+}
+.crossIconTog{
+  display: none;
 }

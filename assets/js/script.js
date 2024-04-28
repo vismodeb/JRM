@@ -3,13 +3,13 @@ $("document").ready(function () {
   // lottery button heid
   $('.barsIconTog').click(function(){
     $('.toggleDM_1').show();
-    // $('.lottery_provide_btn').show();
-    // $('.lottery_item_box2').hide();
+    $('.crossIconTog').show();
+    $('.barsIconTog').hide();
   })
-  $('.closeButton').click(function(){
+  $('.crossIconTog').click(function(){
     $('.toggleDM_1').hide();
-    // $('.barsIconTog').hide();
-    // $('.lottery_nav_provide').hide();
+    $('.barsIconTog').show();
+    $('.crossIconTog').hide();
   })
 
   // Nav Toggle
