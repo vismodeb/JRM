@@ -409,6 +409,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .numberCountBox_1 span{
   font-size: 36px;
+  margin-top: 6px;
   font-weight: 700;
   color: #FE5F3C;
 }
@@ -569,4 +570,9 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 17.75px;
   max-width: 100%;
   margin: auto;
+}
+
+/* toggleDM_1 */
+.toggleDM_1{
+  display: none;
 }

@@ -124,6 +124,11 @@
   .chartArea {
     margin: 36px 0 0;
   }
+  .leftNotification {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 14px;
+  }
   
 }
 
@@ -158,6 +163,10 @@
   .numberCountBox_1 span {
     font-size: 30px;
   }
+  .numberCountBox_1 p {
+    width: 60px;
+    display: inline-block;
+  }
   .chartArea {
     margin: 30px 0 0;
     flex-direction: column;
@@ -178,10 +187,6 @@
     align-items: center;
     gap: 20px;
   }
-  .numberCountBox_1 p {
-    width: 60px;
-    display: inline-block;
-  }
   .numberCounting{
     margin-top: 0;
   }
@@ -192,7 +197,7 @@
     padding: 28px 14px 100px 18px;
   }
   .mobile_bottom_nav {
-    padding: 24px 19px;
+    padding: 18px 19px 20px;
     gap: 10px;
   }
   .singleMBMenu1 {
@@ -207,6 +212,19 @@
   }
   .countingBar {
     flex-direction: column;
+  }
+  .leftNotification {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .numberCountBox_1 p {
+    width: 70px;
+  }
+  .numberCountBox_1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .numberCountBox_1 span {
+    font-size: 22px;
   }
 }
 

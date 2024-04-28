@@ -1,5 +1,17 @@
 $("document").ready(function () {
 
+  // lottery button heid
+  $('.barsIconTog').click(function(){
+    $('.toggleDM_1').show();
+    // $('.lottery_provide_btn').show();
+    // $('.lottery_item_box2').hide();
+  })
+  $('.closeButton').click(function(){
+    $('.toggleDM_1').hide();
+    // $('.barsIconTog').hide();
+    // $('.lottery_nav_provide').hide();
+  })
+
   // Nav Toggle
   $('#toggleNav-icon').click(function(){
     $(this).toggleClass('open');
