@@ -1,4 +1,11 @@
 $("document").ready(function () {
+
+  // Nav Toggle
+  $('#toggleNav-icon').click(function(){
+    $(this).toggleClass('open');
+    $('.sidebar').slideToggle();
+  });
+
   // Chart Header Circle
   var options = {
     series: [100],
@@ -146,7 +153,7 @@ $("document").ready(function () {
         breakpoint: 991,
         options: {
           chart: {
-            width: 120,
+            width: 130,
           },
         },
       },
