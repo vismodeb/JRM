@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JRM</title>
     <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon"/>
+    <!-- progress-bar -->
+    <link rel="stylesheet" href="assets/css/progress-bar.css" />
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/> -->
     <!-- Bootstrap css -->
@@ -48,206 +50,123 @@
             </div>
           </div>
         </div>
-        <!-- Calendar -->
-        <div class="calendar1">
-          <ul class="weekdays">
-            <li>ראשון</li>
-            <li>שני</li>
-            <li>שלישי</li>
-            <li>רביעי</li>
-            <li>חמישי</li>
-            <li>שישי</li>
-            <li>שבת</li>
-          </ul>
-          
-          <ul class="days">  
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li><span class="active">23</span></li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-            <li>31</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-        </div>
-        <div class="showBay">
-          <a href="javascript:void(0);">
-            <p>הצג לפי</p>
-            <i class="angleShow fa-solid fa-angle-down"></i>
-          </a>
-        </div>
-        <!-- leftNotification -->
-        <div class="leftNotification">
-          <!-- leftSingleNotification -->
-          <div class="leftSingleNotification">
-            <div class="leftSingleContain">
-              <div class="leftMessageIcon">
-                <img src="assets/images/question_answer.svg" alt="">
-              </div>
-              <div class="notificationText">
-                <h4 class="text_18">פגישה עם ישראל גרילק</h4>
-                <p class="text_16">קינג ג’ורג’ 13 בשעה 14:15</p>
-              </div>
-            </div>
-            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
-          </div>
-          <!-- leftSingleNotification -->
-          <div class="leftSingleNotification">
-            <div class="leftSingleContain">
-              <div class="leftMessageIcon ">
-                <img src="assets/images/event.svg" alt="">
-              </div>
-              <div class="notificationText">
-                <h4 class="text_18">יארצייט לאבא של מנחם כהן</h4>
-                <p class="text_16">30.05.2024</p>
-              </div>
-            </div>
-            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
-          </div>
-          <!-- leftSingleNotification -->
-          <div class="leftSingleNotification">
-            <div class="leftSingleContain">
-              <div class="leftMessageIcon">
-                <img src="assets/images/fact_check.svg" alt="">
-              </div>
-              <div class="notificationText">
-                <h4 class="text_18">לטפל בהוראת קבע של יוסף</h4>
-                <p class="text_16">מספר חשבון: 785-965</p>
-              </div>
-            </div>
-            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
-          </div>
-          <!-- leftSingleNotification -->
-          <div class="leftSingleNotification">
-            <div class="leftSingleContain">
-              <div class="leftMessageIcon">
-                <img src="assets/images/question_answer.svg" alt="">
-              </div>
-              <div class="notificationText">
-                <h4 class="text_18">לארגן מסיבת פורים לקהילה</h4>
-                <p class="text_16">26.05.2024</p>
-              </div>
-            </div>
-            <a href="javascript:voide(0);"><div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div></a>
+        <!-- chartRight -->
+        <div class="chartRight chartRightFrame_2">
+          <a href="javascript:void(0);">כמות אנשי קשר בכל מעגל קשר</a>
+          <div id="chart-circle"></div>
+          <div class="circleChartBT">
+            <p class="text_10 chartColorbox">
+              <img src="assets/images/Ellipse.svg" alt="" />4 משפחה
+            </p>
+            <p class="text_10 chartColorbox">
+              <img src="assets/images/Ellipse-2.svg" alt="" />32 חברים
+            </p>
+            <p class="text_10 chartColorbox">
+              <img src="assets/images/Ellipse-3.svg" alt="" />50 קהילה
+            </p>
           </div>
         </div>
+        <!-- numberCounting -->
+        <div class="numberCounting progressCounting">
+          <div class="">
+            <h4 class="text_20">הכנסות פברואר</h4>
+            <div class="boxCound">
+              <p>9.54%-</p>
+            </div>
+          </div>
+          <div class="numberCountBox_1">
+            <span>$</span>
+            <p id="counter2">0</p>
+          </div>
+        </div>
+        
       </div>
       <!-- End : Left Section -->
 
       <!-- Start : Main Content -->
-      <main class="mainWrapper">
-        <!-- searchBox -->
-        <div class="searchBox_1">
-          <div class="desktopMenuBar12s searchBar">
-            <form action="">
-              <input type="search" placeholder="חיפוש" />
-              <span><img src="assets/images/search.svg" alt="Deshboard" /></span>
-            </form>
-            <div class="dnoneMenu">
-              <div class="toggleSitbarD">
-                <a href="index.html"
-                  ><img src="assets/images/D-logo.svg" alt=""
-                /></a>
-                <button class="barsIconTog">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <button class="crossIconTog">
-                  <i class="fa-solid fa-xmark"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="mobileHendLogo">
-            <a href="index.html"><img src="assets/images/D-logo.svg" alt=""/></a>
-          </div>
-        </div>
-        <!-- chartHeader -->
-        <div class="chartHeader">
-          <div class="chartHeaderRight">
-            <h2>ערב טוב הרב מנדל אורליק, ברוך הבא ל-JRM</h2>
-          </div>
-          <div class="countingBar">
-            <div class="progressCounting">
-              <div class="singleProgressContain">
-                <h4 class="text_20">אנשי קשר</h4>
-                <p class="text_10">
-                  <img src="assets/images/Ellipse.svg" alt="" />קהילה
-                </p>
-                <p class="text_10">
-                  <img src="assets/images/Ellipse-2.svg" alt="" />חברים
-                </p>
-                <p class="text_10">
-                  <img src="assets/images/Ellipse-3.svg" alt="" />משפחה
-                </p>
-              </div>
-              <div class="pieChartMain">
-                <div id="pie1"></div>
-                <p class="picChartText">563</p>
-              </div>
-            </div>
-            <div class="numberCounting progressCounting">
-              <div class="">
-                <h4 class="text_20">הכנסות פברואר</h4>
-                <div class="boxCound">
-                  <p>9.54%-</p>
+      <main>
+        <div class="middleEast_frame">
+          <h2 class="text_25 margin_25">תיעוד רציף של הקשרים שלך,
+              מביא לקשר חזק, אישי וקרוב יותר</h2>
+          <!-- data table -->
+          <div class="dataTable">
+            <div class="dataTableTop">
+              <h4 class="text_25">רשימת אנשי הקשר</h4>
+              <div class="dataTableTop">
+                <!-- search -->
+                <div class="searchBar searchFrame_2">
+                  <form action="">
+                    <input type="search" placeholder="חיפוש" />
+                    <span><img src="assets/images/search.svg" alt="Deshboard" /></span>
+                  </form>
+                </div>
+                <!-- add new -->
+                <div class="addNew">
+                  <a href="javascript:void(0);">
+                    <span>איש קשר חדש</span>
+                    <div class="plusAddNewIcon">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="numberCountBox_1">
-                <span>$</span>
-                <p id="counter">0</p>
-              </div>
             </div>
-          </div>
-        </div>
-        <!-- chartArea -->
-        <div class="chartArea">
-          <!-- chartLeft -->
-          <div class="chartLeft">
-            <a href="javascript:void(0);">סכום ההכנסה השנתי לפי חודשים</a>
-            <div id="chart"></div>
-          </div>
-          <!-- chartRight -->
-          <div class="chartRight">
-            <a href="javascript:void(0);">כמות אנשי קשר בכל מעגל קשר</a>
-            <div id="chart-circle"></div>
-            <div class="circleChartBT">
-              <p class="text_10 chartColorbox">
-                <img src="assets/images/Ellipse-3.svg" alt="" />4 משפחה
-              </p>
-              <p class="text_10 chartColorbox">
-                <img src="assets/images/Ellipse-2.svg" alt="" />32 חברים
-              </p>
-              <p class="text_10 chartColorbox">
-                <img src="assets/images/Ellipse.svg" alt="" />50 קהילה
-              </p>
+            <div class="dataTableBox">
+              <!-- <div style="overflow-x: auto;"> -->
+                <table>
+                  <tr class="dataTableHeading">
+                    <th>&nbsp;</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="dataTableImg"></div>
+                    </td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                </table>
+              <!-- </div> -->
+              
             </div>
           </div>
         </div>
@@ -415,9 +334,6 @@
 
     <!-- toggleDM_1 -->
     <div class="toggleDM_1">
-      <a href="index.html" class="mobileLogo2">
-        <img src="assets/images/D-logo.svg" alt=""/>
-      </a>
       <div class="sideBarMenu">
         <nav>
           <ul>
@@ -532,10 +448,12 @@
     </div>
     <!-- toggleDM_1 -->
 
-
     <!-- jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- progress-bar -->
+<!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
+<script src="assets/js/progress-bar.js"></script>
     <!-- Bootstrap js -->
     <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
     <!-- FontAwesome -->

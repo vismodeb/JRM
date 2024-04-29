@@ -20,7 +20,6 @@ body {
   font-weight: 400;
   font-family: "Simona Regular";
   background: #EDF2FA;
-
   /* direction:rtl; */
 }
 ul,
@@ -75,7 +74,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /*  Start : Left Section
-*************************************/
+********************************/
 .leftSection {
   max-width: 388px;
   direction: rtl;
@@ -133,8 +132,30 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   justify-content: center;
 }
+.showBay{
+  margin: 36px 0 20px 0;
+}
+.showBay a{
+  max-width: 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 9px 0px 0;
+  border-radius: 10px;
+  color: #0B2D65;
+  background: #D9E3F5;
+}
+.showBay a .angleShow{
+  padding: 6px;
+  font-size: 14px;
+  background: #EDF2FA;
+  border-radius: 10px;
+  border: 2px solid #D9E3F5;
+}
 
-/* leftNotification */
+/* leftNotification 
+*****************************/
 .leftSingleNotification {
   margin-top: 12px;
   display: flex;
@@ -170,10 +191,6 @@ input[type="search"]::-webkit-search-results-decoration {
   height: auto;
   color: #0b2d65;
 }
-/*  
-*************************************/
-/* Start : Main Content
-*************************************/
 
 /* Start : Sidebar Section 
 *************************************/
@@ -215,7 +232,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .sidebarItem {
   display: flex;
-  /* align-items: center; */
   gap: 21px;
 }
 .sidebarIcon {
@@ -272,8 +288,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .cardIcon_0 .iconSidebar {
   height: 22px;
 }
-
-
 .mainWrapper{
   max-width: 970px;
   width: 100%;
@@ -298,17 +312,22 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 140px;
 }
 .barsIconTog {
-  padding: 4px 8px;
+  width: 40px;
+  height: 40px;
   border-radius: 8%;
   font-size: 23px;
   color: #1557bf;
   background: #b1c7e5;
+  border: none;
 }
 .mobileHendLogo{
   display: none;
   max-width: 130px;
   margin-bottom: 18px;
 }
+
+/* Start : Main Content
+*************************************/
 /* -- Search Bar -- */
 .searchBar {
   position: relative;
@@ -463,6 +482,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 50px 0 0;
   gap: 20px;
 }
+.chartRightFrame_2 a,
 .chartArea a {
   display: block;
   max-width: 300px;
@@ -479,13 +499,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .chartLeft {
   flex: 0 0 64%;
   max-width: 582px;
-  /* height: 400px; */
   background: #fff;
   border-radius: 25px;
   padding: 30px;
 }
 .chartRight {
-  /* flex: 0 0 36%; */
   max-width: 368px;
   background: #fff;
   border-radius: 25px;
@@ -493,9 +511,23 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .circleChartBT{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 4px;
   direction: ltr;
+}
+.chartColorbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  direction: rtl;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.chartLeft .apexcharts-toolbar {
+  display: none;
 }
 
 /* start mobile bottom nav 
@@ -564,24 +596,253 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: center;
 }
 .singleMBMenuRight {
-  width: 60px;
-  padding: 19px 17px;
+  padding: 17px;
+  font-size: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   background: #0042AD;
   border-radius: 17.75px;
   max-width: 100%;
   margin: auto;
+}
+.singleMBMenuRight2 {
+  padding: 17px 18px;
+  font-size: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #0042AD;
+  border-radius: 17.75px;
+  max-width: 100%;
+  margin: auto;
+}
+.colos2{
+  display: none;
 }
 
 /* toggleDM_1 */
 .toggleDM_1{
   display: none;
   position: absolute;
-  top: 0;
+  width: 100%;
+  top: 86px;
   right: 0;
-  background: red;
-  padding: 500px;
-  z-index: 99;
+  background: #EDF2FA;
+  z-index: 61;
+  padding: 28px 14px 110px 18px;
+  border-top: 1px solid #1557bf;
+  direction: rtl;
+}
+.toggleDM_1 .mobileLogo2 img{
+  max-width: 130px;
 }
 .crossIconTog{
+  width: 40px;
+  height: 40px;
   display: none;
+  border-radius: 8%;
+  font-size: 26px;
+  color: #1557bf;
+  background: #b1c7e5;
+  border: none;
 }
+.toggleDM_1 .sideBarMenu nav ul li a {
+  color: #1557bf;
+}
+.toggleDM_1 .sidebarIcon {
+  color: #fff;
+  background: #0042ad;
+}
+.toggleDM_1 .sideBarMenu nav ul li a .plusIcon {
+  display: block;
+}
+
+/* frame-2 = Main
+************************************************/
+
+.middleEast_frame{
+  max-width: 1047px;
+  direction: rtl;
+}
+.text_25 {
+  font-size: 25px;
+  line-height: 25px;
+  max-width: 328px;
+  font-weight: 800;
+  color: #0B2D65;
+}
+.margin_25{
+  margin: 25px 0 73px 0;
+}
+/* data table */
+.dataTable{
+  padding: 10px 10px 10px 11px;
+  background: #F9FBFD;
+  border-radius: 25px;
+}
+.dataTableTop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.dataTableTop h4{
+  color: #0B2D65;
+  font-weight: 400;
+  padding: 17px 27px 0 0;
+}
+
+.color_12{
+  margin-top: 0;
+  background: #EDF2FA;
+}
+
+/* add new */
+.addNew{
+  width: 100%;
+  max-width: 210px;
+  background: #FE5F3C;
+  border-radius: 20px;
+}
+.addNew a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+.addNew a span{
+  padding: 16px 32px 16px 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #F9FBFD;
+}
+.plusAddNewIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 52px;
+  height: 50px;
+  border: 4px solid #FE5F3C;
+  color: #FE5F3C;
+  background: #F9FBFD;
+  border-radius: 20px;
+}
+
+
+
+.dataTableBox table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  overflow-x: auto;
+}
+.dataTableBox th, td {
+  /* text-align: left; */
+  padding: 8px;
+}
+/* tr:nth-child(even) {background-color: #f2f2f2;} */
+.dataTableBox{
+  margin-top: 26px;
+}
+.dataTableBox .dataTableHeading{
+  background: #D9E3F5;
+  border-radius: 20px !important;
+}
+.dataTableBox tr th{
+  text-align: right;
+  padding: 26px 0;
+  font-size: 16px;
+  font-weight: medium;
+  color: #0B2D65;
+}
+.dataTableBox tr td{
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0;
+  color: #0B2D65;
+  border-bottom: 1px solid #D9E3F5;
+}
+.dataTableImg{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background: #EDF2FA;
+  border-radius: 15px;
+}
+.searchFrame_2{
+  margin: 0;
+}
+.searchFrame_2 form input {
+  width: 100%;
+  height: 100%;
+  background: #EDF2FA;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  padding: 0 21px;
+  font-size: 18px;
+  color: #0b2d65;
+  text-align: right;
+}
+
+.chartRightFrame_2{
+  max-width: 100%;
+  width: 100%;
+  margin-top: 68px;
+}
+
+
+
+
+/* calendar1 */
+
+.calendar1 .weekdays {
+  margin-top: 60px;
+  padding: 10px 0;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13%;
+  color: #FE5F3C;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.days {
+  padding: 10px 0;
+  margin: 0;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #3F3F3F;
+}
+.days li .active {
+  padding: 7px;
+  border-radius: 6px;
+  background: #FE5F3C;
+  color: white !important
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+

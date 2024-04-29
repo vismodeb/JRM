@@ -35,24 +35,14 @@
   }
 }
 
-/* @media all and (min-width: 992px){
-  .sidebar {
-     display: flex !important;
-  }
-  .menu nav ul {
-     display: flex !important;
-  }
-} */
-
 @media (max-width: 1200px) {
   .container {
     padding: 28px 14px 22px 18px;
     gap: 1.2rem;
     grid-template-columns: 20rem auto;
   }
-  /* leftSection */
   .leftProfile {
-    padding: 16px;
+    padding: 10px 16px;
   }
   .settingIcon {
     padding: 8px;
@@ -79,6 +69,9 @@
   .searchBar {
     margin: 0px 0 30px;
   }
+  .searchFrame_2{
+    margin: 0;
+  }
   .dnoneMenu{
     display: block;
   }
@@ -91,6 +84,9 @@
   }
   .chartArea {
     margin: 24px 0 0;
+  }
+  .toggleDM_1 .sideBarMenu {
+    padding: 0px 0px 66px;
   }
 }
 
@@ -128,6 +124,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 14px;
+  }
+  .toggleDM_1 {
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 140px;
+    border-top: none;
+  }
+  .toggleDM_1 .sideBarMenu {
+    padding: 30px 0px 44px;
   }
   
 }
@@ -190,7 +197,16 @@
   .numberCounting{
     margin-top: 0;
   }
+  .toggleDM_1 {
+    padding-bottom: 134px;
+  }
 }
+
+/* @media (max-width: 660px) {
+  .toggleDM_1 {
+    padding-bottom: 84px;
+  }
+} */
 
 @media (max-width: 576px) {
   .container {
@@ -226,6 +242,9 @@
   .numberCountBox_1 span {
     font-size: 22px;
   }
+  /* .toggleDM_1 {
+    padding-bottom: 0px;
+  } */
 }
 
 @media (max-width: 450px) {}

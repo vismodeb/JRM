@@ -2,7 +2,7 @@ $("document").ready(function () {
 
   // lottery button heid
   $('.barsIconTog').click(function(){
-    $('.toggleDM_1').show();
+    $('.toggleDM_1').slideToggle();
     $('.crossIconTog').show();
     $('.barsIconTog').hide();
   })
@@ -11,12 +11,17 @@ $("document").ready(function () {
     $('.barsIconTog').show();
     $('.crossIconTog').hide();
   })
-
-  // Nav Toggle
-  $('#toggleNav-icon').click(function(){
-    $(this).toggleClass('open');
-    $('.sidebar').slideToggle();
-  });
+  // lottery button heid
+  $('.singleMBMenuRight').click(function(){
+    $('.toggleDM_1').slideToggle();
+    $('.colos2').show();
+    $('.singleMBMenuRight').hide();
+  })
+  $('.colos2').click(function(){
+    $('.toggleDM_1').hide();
+    $('.singleMBMenuRight').show();
+    $('.colos2').hide();
+  })
 
   // Chart Header Circle
   var options = {
@@ -30,6 +35,12 @@ $("document").ready(function () {
         hollow: {
           size: "50%",
         },
+        dataLabels: {
+          style: {
+            colors: ["#FF5733", "#00FF00", "#0000FF"] 
+            // Specify colors for each category
+          }
+        }
       },
     },
     labels: ["563"],
@@ -46,46 +57,67 @@ $("document").ready(function () {
     chart: {
       height: 210,
       width: "100%",
-      type: "area",
+      type: "line",
       animations: {
         initialAnimation: {
           enabled: false,
         },
       },
     },
+    colors: ["#FF5733"],
     series: [
       {
         name: "Series 1",
         data: [
           {
-            x: "02-10-2017 GMT",
-            y: 34,
+            x: "תשרי",
+            y: 1120,
           },
           {
-            x: "02-11-2017 GMT",
-            y: 43,
+            x: "חשוון",
+            y: 1180,
           },
           {
-            x: "02-12-2017 GMT",
-            y: 31,
+            x: "כסליו",
+            y: 950,
           },
           {
-            x: "02-13-2017 GMT",
-            y: 43,
+            x: "טבת",
+            y: 1410,
           },
           {
-            x: "02-14-2017 GMT",
-            y: 33,
+            x: "אדר",
+            y: 1420,
           },
           {
-            x: "02-15-2017 GMT",
-            y: 52,
+            x: "ניסן",
+            y: 990,
+          },
+          {
+            x: "אייר",
+            y: 1230,
+          },
+          {
+            x: "סיון",
+            y: 1040,
+          },
+          {
+            x: "תמוז",
+            y: 1300,
+          },
+          {
+            x: "אב",
+            y: 940,
+          },
+          {
+            x: "אלול",
+            y: 1278,
           },
         ],
       },
     ],
     xaxis: {
-      type: "datetime",
+      type: "numeric",
     },
   };
 
@@ -97,9 +129,10 @@ $("document").ready(function () {
   var options = {
     series: [100, 100, 100],
     chart: {
-      height: 200,
+      height: 220,
       type: "radialBar",
     },
+    colors: ["#E1DBFF", "#BBACFF", "#9079FD"],
     // plotOptions: {
     //   radialBar: {
     //     dataLabels: {
@@ -120,7 +153,7 @@ $("document").ready(function () {
     //     },
     //   },
     // },
-    // labels: ["Apples", "Oranges", "Bananas"],
+    labels: ["משפחה", "חברים", "קהילה"],
   };
 
   var chart = new ApexCharts(document.querySelector("#chart-circle"), options);
@@ -192,6 +225,27 @@ $("document").ready(function () {
     }
   }
   updateCounter();
+
+  // Number Counter
+  let currentNumber2 = 0;
+  const counterElement2 = document.getElementById("counter2");
+  const targetNumber2 = 256;
+
+  function updateCounter2() {
+    if (currentNumber2 <= targetNumber2) {
+      counterElement2.textContent = currentNumber2;
+      currentNumber2++;
+      setTimeout(updateCounter2, 1); // Change this value to adjust the speed of counting
+    }
+  }
+  updateCounter2();
+  
+// progress bar
+  $(document).ready(function(){
+    $(".progress-bar").ProgressBar();
+  });
+
+
 });
 
 
