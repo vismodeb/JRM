@@ -88,11 +88,40 @@
   .toggleDM_1 .sideBarMenu {
     padding: 0px 0px 66px;
   }
+  .calendar1 .weekdays {
+    margin-top: 14px;
+  }
+  .showBay {
+    margin: 14px 0 20px 0;
+  }
+  /* frame-2 */
+  .margin_25 {
+    margin: 0px 0 43px 0;
+  }
+  .chartRightFrame_2 {
+    margin-top: 36px;
+  }
+  .numberCountBox_2 p {
+    font-size: 38px;
+    padding: 16px 26px 0px 4px;
+  }
+  .mobileLogo2{
+    display: none;
+  }
+  .numberCountBox_1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  .numberCountBox_1 span {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 991px) {
   /* manu */
-  
+  .mobileLogo2{
+    display: block;
+  }
   /* manu */
   .container {
     padding: 28px 14px 116px 18px;
@@ -136,6 +165,14 @@
   .toggleDM_1 .sideBarMenu {
     padding: 30px 0px 44px;
   }
+  /* .progressBarBoxFrame_2,
+  .progressBarTopC{
+    display: none;
+  }
+  .progressBarBoxFrame_2S,
+  .progessBarTopS{
+    display: block;
+  } */
   
 }
 
@@ -200,13 +237,49 @@
   .toggleDM_1 {
     padding-bottom: 134px;
   }
-}
-
-/* @media (max-width: 660px) {
-  .toggleDM_1 {
-    padding-bottom: 84px;
+  .addNew {
+    width: auto;
   }
-} */
+  .addNew a span {
+    display: none;
+  }
+  .plusAddNewIcon {
+    width: 36.98px;
+    height: 35.56px;
+    border: 2px solid #FE5F3C;
+    border-radius: 9px;
+  }
+  .searchFrame_2 {
+    display: none;
+  }
+  .searchMobilFrame_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.98px;
+    height: 35.56px;
+    background: #EDF2FA;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  .dataTableTop h4 {
+    padding: 0;
+  }
+  .dataTable {
+    width: 100%;
+    max-width: 660px;
+    margin: auto;
+    padding: 22px;
+  }
+  /* .tableOverFlow {
+    max-width: 640px;
+    overflow-x: auto;
+    margin: auto;
+  } */
+  .progressBarTopC{
+    margin-top: 20px;
+  }
+}
 
 @media (max-width: 576px) {
   .container {
@@ -242,11 +315,14 @@
   .numberCountBox_1 span {
     font-size: 22px;
   }
-  /* .toggleDM_1 {
-    padding-bottom: 0px;
-  } */
+  
 }
 
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+  /* .tableOverFlow {
+    width: 490px;
+    overflow-x: auto;
+  } */
+}
 
 @media (max-width: 367px) {}

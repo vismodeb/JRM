@@ -193,9 +193,9 @@ $("document").ready(function () {
   chart.render();
 
   // Number Counter
-  let currentNumber = 8000;
+  let currentNumber = 400;
   const counterElement = document.getElementById("counter");
-  const targetNumber = 8256;
+  const targetNumber = 563;
 
   function updateCounter() {
     if (currentNumber <= targetNumber) {
@@ -205,7 +205,7 @@ $("document").ready(function () {
     }
   }
   updateCounter();
-  
+
 });
 
 

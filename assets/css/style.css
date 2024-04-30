@@ -299,6 +299,10 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   gap: 30px;
 }
+.desktopMenuBar13s{
+  display: flex;
+  gap: 30px;
+}
 .dnoneMenu{
   display: none;
 }
@@ -366,6 +370,9 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 18px;
   height: auto;
 }
+.searchMobilFrame_2 {
+  display: none;
+}
 
 /* chartHeader */
 .chartHeader {
@@ -385,6 +392,24 @@ input[type="search"]::-webkit-search-results-decoration {
   gap: 10px;
   border-radius: 25px;
   background: #f9fbfd;
+  padding: 13px 26px 4px 20px;
+}
+.progressCounting2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 25px;
+  background: #0B2D65;
+  padding: 13px 26px 22px 26px;
+}
+.progressCounting2 h4{
+  color: #F9FBFD;
+}
+.numberCountBox_2 p{
+  font-size: 45px;
+  font-weight: 600;
+  color: #F9FBFD;
   padding: 13px 26px 4px 20px;
 }
 .singleProgressContain{
@@ -437,6 +462,12 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 1px 7px 2px 7px;
   background: #fdd1d2;
   border-radius: 50px;
+}
+.boxCound_2{
+  background: #B9EBDF;
+}
+.boxCound_2 p{
+  color: #219673 !important;
 }
 .boxCound p {
   font-size: 12px;
@@ -632,7 +663,7 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 0;
   background: #EDF2FA;
   z-index: 61;
-  padding: 28px 14px 110px 18px;
+  padding: 36px 14px 110px 18px;
   border-top: 1px solid #1557bf;
   direction: rtl;
 }
@@ -732,41 +763,68 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #F9FBFD;
   border-radius: 20px;
 }
-
-
-
-.dataTableBox table {
+/* .dataTableBox_2{
+  width: 100%;
+  width: 500px;
+  height: 500px;
   border-collapse: collapse;
-  /* width: 100%; */
   overflow-x: auto;
-}
-.dataTableBox th, td {
-  /* text-align: left; */
-  padding: 8px;
-}
+} */
+/* .dataTableBox_2 th, td {
+  padding: 3px;
+} */
 /* tr:nth-child(even) {background-color: #f2f2f2;} */
-.dataTableBox{
+/* .dataTableBox{
   margin-top: 26px;
-}
-.dataTableBox .dataTableHeading{
+} */
+/* .dataTableBox .dataTableHeading{
   background: #D9E3F5;
   border-radius: 20px !important;
 }
-.dataTableBox tr th{
+.dataTableBox_2 tr th{
   text-align: right;
-  padding: 26px 0;
+  padding: 26px 10px;
   font-size: 16px;
-  font-weight: medium;
   color: #0B2D65;
 }
-.dataTableBox tr td{
+.dataTableBox_2 tr td{
   text-align: right;
   font-size: 16px;
   font-weight: 400;
-  padding: 15px 0;
+  padding: 15px;
   color: #0B2D65;
   border-bottom: 1px solid #D9E3F5;
+} */
+
+.dataTableBox{
+  margin-top: 15px;
+  direction: rtl;
 }
+.dataTableBox_2{
+  border-collapse: collapse;
+}
+.dataTableBox_2 {
+  width: 100%;
+}
+.box11{
+  background: #D9E3F5;
+  border-radius: 20px;
+}
+.box00{
+  border-radius: 0 20px 20px 0;
+}
+.box01{
+  border-radius: 20px 0px 0px 20px;
+}
+.box11:nth-child(1){
+  border-radius: 20px;
+}
+.dataTableBox_2 tr th{
+  color: #0B2D65;
+  padding: 26px 10px;
+}
+
+
 .dataTableImg{
   width: 40px;
   height: 40px;
@@ -789,18 +847,13 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #0b2d65;
   text-align: right;
 }
-
 .chartRightFrame_2{
   max-width: 100%;
   width: 100%;
   margin-top: 68px;
 }
 
-
-
-
 /* calendar1 */
-
 .calendar1 .weekdays {
   margin-top: 60px;
   padding: 10px 0;
@@ -846,3 +899,29 @@ input[type="search"]::-webkit-search-results-decoration {
   .weekdays li, .days li {width: 12.2%;}
 }
 
+.progressBarBoxFrame_2 {
+  margin-top: 20px;
+  padding: 18px 20px 0px 10px;
+  color: #F9FBFD;
+  background: #0B2D65;
+  border-radius: 20px;
+}
+.progressBarBoxFrame_2 h4{
+  max-width: 175px;
+}
+.numberCountBox_3 p {
+  font-size: 40px;
+  margin-top: 54px;
+  font-weight: 600;
+}
+.progressBar_2 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  transform: rotate(-90deg);
+  margin-left: 50px;
+}
+.numberCountBox_3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+}

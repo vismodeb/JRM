@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JRM</title>
     <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon"/>
-    <!-- progress-bar -->
-    <link rel="stylesheet" href="assets/css/progress-bar.css" />
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/> -->
-    <!-- Bootstrap css -->
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <!-- google font -->
     <link href="https://db.onlinewebfonts.com/c/1b60ac8cfd658aeb1fe11e8c3543ed7a?family=Simona+Regular" rel="stylesheet"/>
     <!-- fontAwesome -->
@@ -67,27 +62,62 @@
           </div>
         </div>
         <!-- numberCounting -->
-        <div class="numberCounting progressCounting">
+        <div class="numberCounting progressCounting2 progressBarTopC">
           <div class="">
-            <h4 class="text_20">הכנסות פברואר</h4>
-            <div class="boxCound">
+            <h4 class="text_20">אנשי קשר שנוספו</h4>
+            <div class="boxCound boxCound_2">
               <p>9.54%-</p>
             </div>
           </div>
-          <div class="numberCountBox_1">
-            <span>$</span>
-            <p id="counter2">0</p>
+          <div class="numberCountBox_2">
+            <p id="counter">0</p>
           </div>
         </div>
-        
+        <!-- progress bar -->
+        <div class="progressBarBoxFrame_2">
+          <h4 class="text_18">כמות האנשים שהתקדמו
+              למעגל קרוב יותר</h4>
+          <div class="numberCountBox_3">
+            <p class="">105</p>
+            <div class="progressBar_2">
+              <div class="div1 demo"></div>
+              <div class="div2 demo"></div>
+              <div class="div3 demo"></div>
+              <div class="div4 demo"></div>
+              <div class="div5 demo"></div>
+              <div class="div6 demo"></div>
+              <div class="div7 demo"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- End : Left Section -->
 
       <!-- Start : Main Content -->
       <main>
         <div class="middleEast_frame">
-          <h2 class="text_25 margin_25">תיעוד רציף של הקשרים שלך,
+          <div class="">
+            <div class="mobileHendLogo">
+              <a href="index.html"><img src="assets/images/D-logo.svg" alt=""/></a>
+            </div>
+          </div>
+          <div class="desktopMenuBar13s">
+            <div class="dnoneMenu">
+              <div class="toggleSitbarD">
+                <button class="barsIconTog">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="crossIconTog">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="index.html"
+                  ><img src="assets/images/D-logo.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <h2 class="text_25 margin_25">תיעוד רציף של הקשרים שלך,
               מביא לקשר חזק, אישי וקרוב יותר</h2>
+          </div>
           <!-- data table -->
           <div class="dataTable">
             <div class="dataTableTop">
@@ -100,6 +130,7 @@
                     <span><img src="assets/images/search.svg" alt="Deshboard" /></span>
                   </form>
                 </div>
+                <a class="searchMobilFrame_2" href="javascript:void(0);"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <!-- add new -->
                 <div class="addNew">
                   <a href="javascript:void(0);">
@@ -112,60 +143,108 @@
               </div>
             </div>
             <div class="dataTableBox">
-              <!-- <div style="overflow-x: auto;"> -->
-                <table>
-                  <tr class="dataTableHeading">
-                    <th>&nbsp;</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>Points</th>
-                    <th>&nbsp;</th>
+              <div class="tableOverFlow">
+                <table class="dataTableBox_2">
+                  <tr class="box11">
+                    <th class="box00">&nbsp;</th>
+                    <th>שם</th>
+                    <th>משפחה</th>
+                    <th>מעגל קשר</th>
+                    <th>מין</th>
+                    <th>מצב</th>
+                    <th>גיל</th>
+                    <th>סטטוס יהדות</th>
+                    <th>שפה</th>
+                    <th class="box01">&nbsp;</th>
                   </tr>
                   <tr>
                     <td>
                       <div class="dataTableImg"></div>
                     </td>
-                    <td>Smith</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>50</td>
+                    <td>משה</td>
+                    <td>ליבוביץ</td>
+                    <td>חבר קהילה</td>
+                    <td>זכר</td>
+                    <td>רווק</td>
+                    <td>24</td>
+                    <td>דתי מסורתי</td>
+                    <td>צרפתית</td>
                     <td><i class="fa-solid fa-ellipsis"></i></td>
                   </tr>
                   <tr>
                     <td><div class="dataTableImg"></div></td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
-                    <td>94</td>
+                    <td>יעקב</td>
+                    <td>שראל</td>
+                    <td>משפחה</td>
+                    <td>זכר</td>
+                    <td>נשוי</td>
+                    <td>30</td>
+                    <td>חרדי</td>
+                    <td>עברית</td>
                     <td><i class="fa-solid fa-ellipsis"></i></td>
                   </tr>
                   <tr>
                     <td><div class="dataTableImg"></div></td>
-                    <td>Johnson</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>67</td>
+                    <td>רבקה</td>
+                    <td>אשכנזי</td>
+                    <td>חבר קהילה</td>
+                    <td>נקבה</td>
+                    <td>נשואה</td>
+                    <td>50</td>
+                    <td>חבדניק</td>
+                    <td>עברית</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>לאה</td>
+                    <td>מועלם</td>
+                    <td>חבר</td>
+                    <td>נקבה</td>
+                    <td>רווקה</td>
+                    <td>38</td>
+                    <td>דתי מסורתי</td>
+                    <td>אנגלית</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>מנחם</td>
+                    <td>עומר</td>
+                    <td>חבר קהילה</td>
+                    <td>זכר</td>
+                    <td>גרוש</td>
+                    <td>42</td>
+                    <td>חבדניק</td>
+                    <td>גרמנית</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>ישראל</td>
+                    <td>כהן</td>
+                    <td>משפחה</td>
+                    <td>זכר</td>
+                    <td>רווק</td>
+                    <td>18</td>
+                    <td>חבדניק</td>
+                    <td>יידיש</td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dataTableImg"></div></td>
+                    <td>אהרון</td>
+                    <td>לוי</td>
+                    <td>חבר</td>
+                    <td>זכר</td>
+                    <td>רווק</td>
+                    <td>24</td>
+                    <td>חרדי</td>
+                    <td>אנגלית</td>
                     <td><i class="fa-solid fa-ellipsis"></i></td>
                   </tr>
                 </table>
-              <!-- </div> -->
+              </div>
               
             </div>
           </div>
@@ -334,6 +413,9 @@
 
     <!-- toggleDM_1 -->
     <div class="toggleDM_1">
+      <a href="index.html" class="mobileLogo2">
+        <img src="assets/images/D-logo.svg" alt=""/>
+      </a>
       <div class="sideBarMenu">
         <nav>
           <ul>
@@ -451,14 +533,24 @@
     <!-- jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<!-- progress-bar -->
-<!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
-<script src="assets/js/progress-bar.js"></script>
-    <!-- Bootstrap js -->
-    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <!-- progress-bar -->
+    <script src="assets/js/progressBar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
     <!-- FontAwesome -->
     <script src="assets/js/FontAwesome.min.js"></script>
     <!-- script js -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-2.js"></script>
+    <!-- progress-bar -->
+    <script>
+      window.onload=function(){
+        win.stripFun($('.div1')[0],80.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div2')[0],70.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div3')[0],60.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div4')[0],75.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div5')[0],82.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div6')[0],82.66,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+        win.stripFun($('.div7')[0],100,'#F9FBFD','#FF603B','white','0px',60,4,4000,'back-out');
+      }
+    </script>
   </body>
 </html>
